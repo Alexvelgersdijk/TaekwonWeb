@@ -1,45 +1,58 @@
 body {
 		
 }
-footer.bottom {
-		position: absolute;
-		bottom: 0px;
+footer {
+		margin-bottom: 0px;
 		width: 100%;
 }
-
-
-
-
-a { /* Tekst in de navigatiebalk */
-		text-decoration: none;
+aside {
+		align: center;
 }
-img {
-		float: left;
+footer.bottom {
+		position: absolute;
+		bottom: 0px; 
+		width: 100%; /* Wijdte in procenten */
 }
-h1 {
+a { /* Navigatie */
+		text-decoration: none; /* De lijn onder het woord weghalen */
+}
+img { /* Afbeelding */
+		float: left; /* Plek afbeelding */
+}
+h1 { /* Titel tekst */
+		font-size: 60px; /* Grootte */
+		font-family: "Arial"; /* Lettertype */
 		display: block;
-		padding-top: 20px;
+		padding-top: 20px; /* Afstand met wat erboven zit */
+		text-align: center; /* Plek van de tekst (midden) */
+		position: static;
 }
 h2 {
+		font-family: "Arial"; 
 		display: block;
+}
+h2.paddingtitle {
+		font-family: "Arial";
+		padding-top: 100px;
+}
+p {
+		font-family: "Arial";
+}
+.paddingleft {
+		font-family: "Arial";
+		font-size: 40px;
+		text-align: center;
 }
 p.footer {
 		font-family: "Arial";
 		font-weight: normal; 
-		color:#FFFFFF;
+		color:#FFFFFF; /* Kleur letters */
 		text-align: center;
-		background-color: #707070;
-		padding-top: 7.5px; 
+		background-color: #707070; /* Kleur achtergrond */
+		padding-top: 7.5px; /* Afstand van de bovenkant */
 		padding-bottom: 7.5px;
-		margin-top: 0;
-		margin-bottom: 0;
+		margin-bottom: 0; /* Afstand met de onderkant van de pagina */
 }
-
-
-.paddingTitle {
-		padding-top: 80px;
-}
-
 .sidenav {
 		height: 100%;
 		width: 160px;
@@ -51,7 +64,6 @@ p.footer {
 		overflow-x: hidden;
 		padding-top: 20px;
 }
-
 .sidenav a {
 		font-family: "Arial";
 		padding: 6px 8px 6px 10px;
@@ -60,13 +72,30 @@ p.footer {
 		color: #707070;
 		display: block;
 }
-
 .sidenav a:hover {
 		color: #F5F5F5;
 }
-
 .main {
-		margin-left: 210px; /* Same as the width of the sidenav */
-		font-size: 20px; /* Increased text to enable scrolling */
+		margin-left: 210px; 
+		font-size: 20px; 
 		padding: 0px 10px;
+}
+
+video {
+		float: center;
+		position: fixed;
+		right: -200px;
+		top: 0px;
+		min-width: 100%;
+		width: 100%;
+		height: 300px;
+		z-index: -1;
+		margin-left: auto;
+		margin-right: auto;
+}
+@media only screen and (max-width: 1000px)
+{
+		body {
+			background-color: lightblue;
+		}
 }
